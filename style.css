@@ -1,0 +1,69 @@
+body {
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    h1, h2{
+        font-family: 'Courier New', monospace;
+    }
+    section {
+        background-color: blue;
+        margin: 20px auto;
+        padding: 20px auto;
+        border-radius:  10px;
+        width: 80;
+        border: 2px solid blue;
+    }
+    p{
+        font-size: 18px;
+        text-shadow: 0.5px 0.5px azure;
+    }
+    .product{
+        display: inline-block;
+        width: 250px;
+        margin: 20px;
+        padding: 10px;
+        background-color: azure;
+        border-radius:  10px;
+        border: 1ps solid blue;
+    }
+nav{
+    padding-top: 19px;
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 20px;
+    cursor: pointer;
+}
+a:before,
+a:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: black;
+    transition: .5s;
+}
+a:after{
+    left: 0;
+    bottom: -10px;
+}
+a:before{
+    right: 0;
+    top: -10px;
+}
+a:hover:after,
+a:hover:before{
+width: 100%;
+}
+}
